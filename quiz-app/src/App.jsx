@@ -4,12 +4,14 @@ import Results from "./pages/Results";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Quiz />} />
-        <Route path="/results" element={<Results />} />
-      </Routes>
-    </Router>
+    <div className="min-h-screen" style={{ backgroundColor: '#0E0E10' }}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Quiz />} />
+          <Route path="/results" element={<Results />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
